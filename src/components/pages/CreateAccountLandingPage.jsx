@@ -1,0 +1,83 @@
+import landingPageImage from "../../assets/gen-aside-image.png";
+import logo from "../../assets/Chuks-Kitchen-header-logo.svg";
+import facebookIcon from "../../assets/facebook-icon.svg";
+import googleIcon from "../../assets/google-icon.svg";
+import mailIcon from "../../assets/mail-icon.svg";
+import lockIcon from "../../assets/lock-icon.svg";
+import eyeClosedIcon from "../../assets/eye-closed-icon.svg";
+import eyeOpenIcon from "../../assets/icons8-eye-20.png";
+import phoneIcon from "../../assets/phone-icon.svg";    
+import { useState } from "react";
+
+
+
+export const CreateAccountLandingPage = () => {
+    const [showPassword, setShowPassword] = useState(false) ;
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false) ;
+
+    const togglePasswordVisibility = () => {
+        setShowPassword(prevState => !prevState) ;
+    }
+
+    const toggleConfirmPasswordVisibility = () => {
+        setShowConfirmPassword(prevState => !prevState) ;
+    }
+    
+    return(
+        <section className="create-account landing-page">
+            <div className="create-account aside-landing-page-image-container">
+                <div className="create-account aside-overlay"></div>
+                <img src={landingPageImage} alt="create account landing page image" className="create-account aside-landing-page-image"/>
+                <div className="create-account aside-text">
+                    <h1>Chuks Kitchen</h1>
+                    <p>Your journey to delicious, authentic Nigerian meals starts here. Sign up or log in to order your favorites today!</p>
+                </div>
+            </div>
+            <div className="create-account landing-page-content">
+                <div className="create-account landing-page-header">
+                    <img src={logo} alt="Chuks Kitchen Logo" className="create-account landing-page-logo logo"/>
+                </div>
+                <h2 className="create-account page-title">Create your Account</h2>
+                <form className="create-account-form user-form">
+                    <img src={mailIcon} alt="email icon" className=" mail input-icon"/>
+                    <img src={phoneIcon} alt="phone icon" className=" phone input-icon"/>
+                    <img src={lockIcon} alt="password icon" className=" lock input-icon"/>
+                    <img src={lockIcon} alt="confirm password icon" className=" confirm-password-lock input-icon"/>
+                    <button type="button" className=" password-toggle" onClick={togglePasswordVisibility}>
+                        <img src={showPassword ? eyeOpenIcon : eyeClosedIcon} alt={showPassword ? "hide password icon" : "show password icon"} />
+                    </button>
+                    <button type="button" className="confirm-password-toggle" onClick={toggleConfirmPasswordVisibility}>
+                        <img src={showConfirmPassword ? eyeOpenIcon : eyeClosedIcon} alt={showConfirmPassword ? "hide confirm password icon" : "show confirm password icon"} />
+                    </button>
+                    
+
+                    <label htmlFor="email">Email or Phone Number</label>
+                    <input type={"email"} id="email" name="email" placeholder="Enter your email" required />
+                    <label htmlFor="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />   
+                    <label htmlFor="password">Password</label>
+                    <input type={showPassword ? "text" : "password"} id="password" name="password" placeholder="Enter your password" required />
+                    <label htmlFor="confirm-password">Confirm Password</label>
+                    <input type={showConfirmPassword ? "text" : "password"} id="confirm-password" name="confirm-password" placeholder="Confirm your password" required />
+                    
+                    <p className="agreement"> 
+                        <input type="checkbox" id="terms" name="terms" required /> 
+                        I agree to the  
+                        <a href="#">Terms & Conditions</a> 
+                        and 
+                        <a  href="#">Privacy Policy</a>
+                    </p>
+                    <button type="submit" className="continue-button">Continue</button>
+                </form>
+                <p className="option-title">or continue with</p>
+                <div className="social-login-links">  
+                    <a href="#" className="social-login-link google"><img src={googleIcon} alt="Google Icon"/> Continue with Google</a>
+                    <a href="#" className="social-login-link facebook"><img src={facebookIcon} alt="Facebook Icon"/> Continue with Facebook</a>
+                </div>
+                <p className="signup-link">Already have an account? <a href="/login">Sign in</a></p>
+
+            </div>
+
+        </section>
+    )  
+}
