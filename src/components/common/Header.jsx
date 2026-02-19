@@ -1,19 +1,19 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink, useParams } from "react-router-dom"
 import headerlogo from "../../assets/Chuks-Kitchen-header-Logo.svg";
 
-export const Header = ({home, explore, myOrders, account, signIn, logIn }) => {
+export const Header = () => {
+  const {category} = useParams();
 
   return (    
     <header>
-       <img src={headerlogo} alt="Chuks Kitchen Logo" className="logo"/>
-       <nav className="nav-links">
-          {home && <Link to="/">{home}</Link>}
-          {explore && <Link to="/menu">{explore}</Link>}
-          {myOrders && <Link to="/orders">{myOrders}</Link>}
-          {account && <Link to="/account">{account}</Link>}
-          {signIn && <Link className="sign-in">{signIn}</Link>}
-          {logIn && <Link className="log-in">{logIn}</Link>}
-       </nav>
+      <img src={headerlogo} alt="Chuks Kitchen Logo" className="logo"/>
+      <nav className="nav-links">
+        <NavLink to="/home" className={({isActive})=> isActive? "active-link" : ""} >Home</NavLink>
+        <NavLink to="/explore/popular" className={category? "active-link" : ""} >Explore</NavLink>
+        <NavLink to="/orders" className={({isActive})=> isActive? "active-link" : ""}>My order</NavLink>
+        <NavLink to="/account" className={({isActive})=> isActive? "active-link" : ""}>Account</NavLink>
+        <Link className="log-in">Login</Link>
+      </nav>
     </header>
   ) 
 }    

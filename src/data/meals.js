@@ -1,0 +1,144 @@
+export const meals = [
+  {
+    id: 1,
+    name: "Jollof Rice & Fried Chicken",
+    description:"Our signature Jollof rice, cooked to perfection, served with succulent fried chicken.",
+    category:"rice",
+    price: 3200,
+    isChefSpecial: true,
+    isPopular: true,
+    imgUrl:"/resources/jollof-rice.svg",
+  },
+  {
+    id: 2,
+    name: "Eba & Egunsi Soup (Goat Meat)",
+    description:"Hearty Egusi soup with tender goat meat, served with soft Eba.",
+    category: "swallow",
+    price: 3500,
+    isChefSpecial: false,
+    isPopular:true,
+    imgUrl: "/resources/eba-egunsi.svg"
+  },
+  {
+    id: 3,
+    name: "Pounded Yam & Edikaikong",
+    category: "swallow",
+    description:"Traditional pounded yam with rich, leafy Edikaikong soup.",
+    price: 3800,
+    isChefSpecial: false,
+    isPopular: true,
+    imgUrl: "/resources/pounded-yam-edikaikong.svg"
+  },
+  {
+    id: 4,
+    name: "Peppered Snail",
+    description:"Spicy and savory peppered snail, perfect as a starter.",
+    category:"soups",
+    price: 2500,
+    isChefSpecial: true,
+    isPopular:true,
+    imgUrl:"/resources/pepper-snail.png",
+  },
+  {
+    id: 5,
+    name: "Spicy Tilapia Pepper Soup",
+    description:"A comforting and spicy soup with tender tilapia fish, a true Nigerian delicacy.",
+    category: "soups",
+    price: 3500,
+    isChefSpecial: true,
+    isPopular: true,
+    imgUrl:"/resources/tilapia-pepper-soup.svg",
+  },
+  {
+    id: 6,
+    name: "Amala with Gbegiri & Ewedu",
+    description:"Classic Amala served with Gbegiri (beans) and Ewedu (jute leaf) soup.",
+    category: "swallow",
+    price: 3000,
+    isChefSpecial: true,
+    isPopular:false,
+    imgUrl:"/resources/amala-abula.png",
+  },
+  {
+    id: 7,
+    name: "Jollof Rice & Smoked Fish",
+    category: "rice",
+    description: "Flavorful jollof rice served with perfectly smoked fish.",
+    price: 3500,
+    isChefSpecial: false,
+    isPopular: true,
+    imgUrl: "/resources/smoke-fish-jollof.svg"
+  },
+  {
+    id: 8,
+    name: "Party Jollof Rice (Veg)",
+    category: "rice",
+    description: "Vegetarian party jollof, full of rich flavors.",
+    price: 3500,
+    isChefSpecial: false,
+    isPopular: false,
+    imgUrl: "/resources/jollof-rice.svg"
+  },
+  {
+    id: 9,
+    name: "Jollof Rice & Fried Turkey",
+    category: "rice",
+    description: "Our signature Jollof rice, cooked to perfection, served with succulent fried turkey.",
+    price: 3500,
+    isChefSpecial: true,
+    isPopular: false,
+    imgUrl: "/resources/jollof-img.svg"
+  },
+  {
+    id: 10,
+    name: "Fufu & Okra Soup (Fish)",
+    category: "swallow",
+     description: "Light Fufu served with fresh okra soup and tilapia fish.",
+    price: 3000,
+    isChefSpecial: true,
+    isPopular:false,
+    imgUrl: "/resources/fufu-okra.svg"
+  },
+  {
+    id: 11,
+    name: "Stick Grill Meat",
+    description:"Our signature Stick meat, cooked to perfection, served fresh vegetables.",
+    category:"grills",
+    imgUrl:"/resources/grills-bbq.svg",
+    price: 3500,
+    isChefSpecial: true,
+    isPopular:false,
+  },
+  {
+    id: 12,
+    name: "POF-POF",
+    description: "Our snacky pof-pof gives you a sweet treat",
+    category:"treats",
+    price:1500,
+    isChefSpecial: false,
+    isPopular:false,
+    imgUrl:"/resources/sweet-treats.svg"
+  },
+  {
+    id: 13,
+    name: "Cakes",
+    description: "Our flurfy cakes give you a sweet treat",
+    category:"desserts",
+    price:2500,
+    isChefSpecial: false,
+    isPopular:false,
+    imgUrl:"/resources/dessert.jpg"
+  },
+  {
+    id: 14,
+    name: "Beverages",
+    description: "Our drinks refreshes your system to feel good",
+    category:"beverages",
+    price:2500,
+    isChefSpecial: false,
+    isPopular:false,
+    imgUrl:"/resources/beverages.jpg"
+  }
+
+
+];

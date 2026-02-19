@@ -13,7 +13,7 @@ export const Footer = () => {
           <p className="footer-description">Bringing the authentic flavors of Nigerian home cooking to your table, with passion and care.</p>
         </div>
 
-        <nav className=" footer nav-links item" >
+        <nav className="footer nav-links item" >
           <h3>Quick Links</h3>
           <Link to="/">Home</Link>
           <Link to="/menu">Explore</Link>
