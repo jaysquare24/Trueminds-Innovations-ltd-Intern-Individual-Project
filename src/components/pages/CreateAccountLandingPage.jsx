@@ -8,6 +8,7 @@ import eyeClosedIcon from "../../assets/eye-closed-icon.svg";
 import eyeOpenIcon from "../../assets/icons8-eye-20.png";
 import phoneIcon from "../../assets/phone-icon.svg";    
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -22,6 +23,12 @@ export const CreateAccountLandingPage = () => {
     const toggleConfirmPasswordVisibility = () => {
         setShowConfirmPassword(prevState => !prevState) ;
     }
+
+    const handleNonFunctionalLinkClick = (e) => {
+        e.preventDefault();
+        alert("This link is not functional in the current version.");
+    };
+
     
     return(
         <section className="create-account landing-page">
@@ -63,16 +70,16 @@ export const CreateAccountLandingPage = () => {
                     <p className="agreement"> 
                         <input type="checkbox" id="terms" name="terms" required /> 
                         I agree to the  
-                        <a href="#">Terms & Conditions</a> 
+                        <a href="#" onClick={handleNonFunctionalLinkClick}>Terms & Conditions</a> 
                         and 
-                        <a  href="#">Privacy Policy</a>
+                        <a  href="#" onClick={handleNonFunctionalLinkClick}>Privacy Policy</a>
                     </p>
-                    <button type="submit" className="continue-button">Continue</button>
+                    <Link to="/home" className="continue-button">Continue</Link>
                 </form>
                 <p className="option-title">or continue with</p>
                 <div className="social-login-links">  
-                    <a href="#" className="social-login-link google"><img src={googleIcon} alt="Google Icon"/> Continue with Google</a>
-                    <a href="#" className="social-login-link facebook"><img src={facebookIcon} alt="Facebook Icon"/> Continue with Facebook</a>
+                    <a href="#" className="social-login-link google" onClick={handleNonFunctionalLinkClick}><img src={googleIcon} alt="Google Icon"/> Continue with Google</a>
+                    <a href="#" className="social-login-link facebook" onClick={handleNonFunctionalLinkClick}><img src={facebookIcon} alt="Facebook Icon"/> Continue with Facebook</a>
                 </div>
                 <p className="signup-link">Already have an account? <a href="/login">Sign in</a></p>
 

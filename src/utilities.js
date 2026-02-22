@@ -1,8 +1,5 @@
 export function formatCurrency(amount) {
-  return Number(amount).toLocaleString(undefined, { 
-    minimumFractionDigits: 2, 
-    maximumFractionDigits: 2 
-  });
+  return Number(amount).toLocaleString(undefined);
 }
 
 export function getSubTotal(items) {

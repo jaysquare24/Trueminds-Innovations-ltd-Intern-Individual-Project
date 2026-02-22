@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom"
 import { getSubTotal, formatCurrency,getShippingFee, getGrandTotal } from "../../../utilities"
 
-export const OrderSummary = ({items, totalAmount}) => {
+
+export const OrderSummary = ({items}) => {
+    const handleNonFunctionalLinkClick = (e) => {
+        e.preventDefault();
+        alert("This link is not functional in the current version.");
+    };
+
+
     
     return (
         <div className="order-summary">
@@ -12,7 +19,7 @@ export const OrderSummary = ({items, totalAmount}) => {
                  <label htmlFor="promo">Add a Promo Code</label>
                  <input name="promo"  id="promo" pattern="[A-Za-z0-9]+" placeholder="Enter code here"/>
                 </div>
-                <button className="promo-button" type="submit">Apply</button>
+                <button className="promo-button" type="submit" onClick={handleNonFunctionalLinkClick}>Apply</button>
            </div>
 
            <div className="summary-container">
@@ -52,8 +59,8 @@ export const OrderSummary = ({items, totalAmount}) => {
            </div>
 
            <div className="delivery-btn-container">
-                <Link>Delivery</Link>
-                <Link>Pick-Up</Link>
+                <Link  onClick={handleNonFunctionalLinkClick}>Delivery</Link>
+                <Link onClick={handleNonFunctionalLinkClick}>Pick-Up</Link>
            </div>
 
            <div className="instruction">
@@ -63,7 +70,7 @@ export const OrderSummary = ({items, totalAmount}) => {
            
            <button
             className='checkout-button'
-            onClick={() => alert("Sorry! Feature not added yet.")}
+            onClick={handleNonFunctionalLinkClick}
             >
               Proceed to Checkout
               

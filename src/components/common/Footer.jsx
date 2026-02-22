@@ -5,6 +5,15 @@ import upArrowIcon from "../../assets/Up-arrow.svg";
 
 export const Footer = () => {
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleNonFunctionalLinkClick = (e) => {
+    e.preventDefault();
+    alert("This link is not functional in the current version.");
+  };
+
   return (
     <footer>
       <div className="footer-content">
@@ -16,10 +25,10 @@ export const Footer = () => {
         <nav className="footer nav-links item" >
           <h3>Quick Links</h3>
           <Link to="/">Home</Link>
-          <Link to="/menu">Explore</Link>
+          <Link to="/explore/popular">Explore</Link>
           <Link to="/orders">My Orders</Link>
-          <Link to="/account">Account</Link>
-          <Link className="sign-in">Sign In</Link>
+          <Link to="/signup">Account</Link>
+          <Link to="/login">Sign In</Link>  
         </nav>
         <div className="contact-info item" >
             <h3>Contact Us</h3>
@@ -29,17 +38,17 @@ export const Footer = () => {
         </div>
         <div className="social-media item" >
             <h3>Follow Us</h3>
-            <p>Facebook</p>
-            <p>Twitter</p>
-            <p>LinkedIn</p>
-            <p>Instagram</p>
+            <a onClick={handleNonFunctionalLinkClick}>Facebook</a>
+            <a onClick={handleNonFunctionalLinkClick}>Twitter</a>
+            <a onClick={handleNonFunctionalLinkClick}>LinkedIn</a>
+            <a onClick={handleNonFunctionalLinkClick}>Instagram</a>
             
         </div>
         
       </div>
       <div className="footer-bottom">
         <p className="footer-copyright">© 2020 Lift Media. All rights reserved.</p>
-        <img src={upArrowIcon} alt="scroll-up icon" className="scroll-up-icon"/>
+        <img src={upArrowIcon} alt="scroll-up icon" className="scroll-up-icon" onClick={scrollToTop}/>
       </div>
     </footer>
   )
