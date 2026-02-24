@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import footerlogo from "../../assets/Chuks-Kitchen-Footer-Logo.svg";
+import footerlogo from "../../assets/Chuks-Kitchen-footer-logo.svg";
 import upArrowIcon from "../../assets/Up-arrow.svg";
 
 
