@@ -1,4 +1,3 @@
-
 import { Modal } from "./modal/Modal";
 import { FoodDetailsAndOptions } from "./modal/children/FoodDetailsAndOptions";
 import { useState } from "react";

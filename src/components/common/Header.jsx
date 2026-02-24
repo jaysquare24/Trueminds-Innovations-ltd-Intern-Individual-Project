@@ -1,5 +1,5 @@
 import { Link, NavLink, useParams } from "react-router-dom"
-import headerlogo from "../../assets/Chuks-Kitchen-header-Logo.svg";
+import headerlogo from "../../assets/Chuks-Kitchen-header-logo.svg";
 import menuIcon from "../../assets/Menu.svg";
 import cancelIcon from "../../assets/icons8-cancel.svg";
 import cartIcon from "../../assets/icons8-fast-cart-30.png";
