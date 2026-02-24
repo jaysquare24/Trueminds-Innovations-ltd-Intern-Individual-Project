@@ -1,5 +1,4 @@
-import { formatCurrency } from "../../../utilities";
-
+import { formatCurrency } from "../../../../utilities";
 import { Link } from "react-router-dom";
 
 export const Cart = ({items, dispatch}) => {

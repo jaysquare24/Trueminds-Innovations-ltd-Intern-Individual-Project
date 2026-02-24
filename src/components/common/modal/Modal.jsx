@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 export const Modal = ({children, onClose, open}) =>{
-    useEffect(() => {
+  useEffect(() => {
     if (open) {
       document.body.classList.add("modal-open");
     } else {
@@ -9,12 +9,13 @@ export const Modal = ({children, onClose, open}) =>{
     }
     return () => document.body.classList.remove("modal-open");
   }, [open]);
-    return (
-        <>
-            <div className="modal">
-              <button className="close-modal" type="button" onClick={onClose}>x</button>
-              { children}
-            </div>
-        </>
-    )
+
+  return (
+  <>
+    <div className="modal">
+      <button className="close-modal" type="button" onClick={onClose}>x</button>
+      { children}
+    </div>
+  </>
+  )
 }

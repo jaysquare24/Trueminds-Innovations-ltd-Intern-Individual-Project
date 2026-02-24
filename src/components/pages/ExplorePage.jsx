@@ -4,10 +4,6 @@ import { FoodGrid } from "../common/FoodGrid"
 import exploreHeroImage from "../../assets/explore-hero-img.png";
 import { NavLink, useParams } from "react-router-dom";
 import { meals } from "../../data/meals";
-
-import { Modal } from "../common/modal/Modal";
-import { FoodDetailsAndOptions } from "../common/modal/children/FoodDetailsAndOptions";
-
   
 export const ExplorePage = () => {
 
@@ -16,19 +12,21 @@ export const ExplorePage = () => {
     const normalizedValue = category?.toLowerCase().trim();
 
     const foodCategory =
-     normalizedValue === "popular"
-        ? meals.filter(meal => meal.isPopular)
-        : meals.filter(meal =>
-        meal.category.toLowerCase() === normalizedValue
-    );
+     normalizedValue === "all"
+        ? meals
+        : normalizedValue === "popular" ? meals.filter(meal => meal.isPopular)
+        : meals.filter(meal => meal.category.toLowerCase() === normalizedValue);
 
-    const foodCategoryTitle = normalizedValue === "popular" ? menuCategories.popular : menuCategories[normalizedValue];
+    const foodCategoryTitle = 
+     normalizedValue === "all" ? menuCategories.all 
+     :normalizedValue === "popular" ? menuCategories.popular 
+     : menuCategories[normalizedValue];
 
-    const activeCategory = normalizedValue === "popular"? "popular" : Object.keys(menuCategories).find(key => key.toLowerCase() === normalizedValue);
+    const activeCategory = 
+      normalizedValue === "all" ? "all" 
+     :normalizedValue === "popular"? "popular" 
+     : Object.keys(menuCategories).find(key => key.toLowerCase() === normalizedValue);
      
-
-  
-    
 
     return(
         <div className="explore-page">
@@ -56,6 +54,9 @@ export const ExplorePage = () => {
             <section className="food-section section">
                 <h2 className="food-category-title">{foodCategoryTitle}</h2>
                 <FoodGrid foodItems={foodCategory}/>
+                {normalizedValue !== "all" && (   
+                    <NavLink to="/explore/all" className="view-all-link">View All Categories</NavLink> 
+                )}
             </section>
              
 

@@ -1,15 +1,13 @@
 import { Link } from "react-router-dom"
-import { getSubTotal, formatCurrency,getShippingFee, getGrandTotal } from "../../../utilities"
-
+import { getSubTotal, formatCurrency,getShippingFee, getGrandTotal } from "../../../../utilities"
 
 export const OrderSummary = ({items}) => {
+    
     const handleNonFunctionalLinkClick = (e) => {
         e.preventDefault();
         alert("This link is not functional in the current version.");
     };
 
-
-    
     return (
         <div className="order-summary">
            <h2 className="order-summary-header">Order Summary</h2>

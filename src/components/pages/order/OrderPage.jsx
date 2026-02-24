@@ -1,5 +1,5 @@
-import { Cart } from "./Cart"
-import { OrderSummary } from "./OrderSummary"
+import { Cart } from "./sections/Cart"
+import { OrderSummary } from "./sections/OrderSummary"
 import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
 import { Link } from "react-router-dom";

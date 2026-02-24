@@ -8,6 +8,7 @@ import eyeClosedIcon from "../../assets/eye-closed-icon.svg";
 import eyeOpenIcon from "../../assets/icons8-eye-20.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 
 
@@ -30,8 +31,18 @@ export const LoginLandingPage = () => {
                 <div className="login aside-overlay"></div>
                 <img src={landingPageImage} alt="login landing page image" className="login aside-landing-page-image"/>
                 <div className="login aside-text">
-                    <h1>Chuks Kitchen</h1>
-                    <p>Your journey to delicious, authentic Nigerian meals starts here. Sign up or log in to order your favorites today!</p>
+                    <motion.h1 className="login aside-text-title" 
+                    initial={{ opacity: 0, y: 20 }} 
+                    whileInView={{ opacity: 1, y: 0 }} 
+                    transition={{ duration: 1 }}>
+                        Chuks Kitchen
+                    </motion.h1>
+                    <motion.p className="login aside-text-description" 
+                    initial={{ opacity: 0 }} 
+                    whileInView={{ opacity: 1 }} 
+                    transition={{ duration: 1, delay: 0.5 }}>
+                        Your journey to delicious, authentic Nigerian meals starts here. Sign up or log in to order your favorites today!
+                    </motion.p>
                 </div>
             </div>
             <div className="login landing-page-content">

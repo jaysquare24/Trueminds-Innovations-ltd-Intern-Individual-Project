@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import foodDetailasideimg from "../../../../assets/food-detail-image.svg"; 
 import navIcon from "../../../../assets/timer.svg"; 
 import { CartContext } from "../../../../context/CartContext";
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState} from "react";
 import { formatCurrency } from "../../../../utilities";
 
 export const FoodDetailsAndOptions = ({ foodItem, onCloseModal }) => {
