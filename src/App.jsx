@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import { Layout } from './components/layout/Layout';
-import { GeneralLandingPage } from './components/pages/GeneralLandingPage';
-import { LoginLandingPage } from './components/pages/LoginLandingPage';
-import { CreateAccountLandingPage } from './components/pages/CreateAccountLandingPage';
-import { HomePage } from './components/pages/home/HomePage';  
-import { ExplorePage } from './components/pages/ExplorePage';
-import { OrderPage } from './components/pages/order/OrderPage';
+import { GeneralLandingPage } from './pages/GeneralLandingPage';
+import { LoginLandingPage } from './pages/LoginLandingPage';
+import { CreateAccountLandingPage } from './pages/CreateAccountLandingPage';
+import { HomePage } from './pages/home/HomePage';  
+import { ExplorePage } from './pages/ExplorePage';
+import { OrderPage } from './pages/order/OrderPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import './style/global.css';
+import './styles/global.css';
 
 function App() {
 

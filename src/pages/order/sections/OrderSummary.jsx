@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { getSubTotal, formatCurrency,getShippingFee, getGrandTotal } from "../../../../utilities"
+import { getSubTotal, formatCurrency,getShippingFee, getGrandTotal } from "../../../utilities"
 
 export const OrderSummary = ({items}) => {
     

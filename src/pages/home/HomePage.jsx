@@ -1,12 +1,12 @@
-import { Hero } from "../../common/Hero";
-import backgroundImage from "../../../assets/home-hero-image.png";
+import { Hero } from "../../components/common/Hero";
+import backgroundImage from "../../assets/home-hero-image.png";
 import { PopularCategories } from "./sections/PopularCategories"; 
 import { ChefSpecial } from "./sections/ChefSpecial";
-import bottomBackgroungImage from  "../../../assets/home-buttom-image.png" ;
-import searchIcon from "../../../assets/search-sm.svg";
+import bottomBackgroungImage from  "../../assets/home-buttom-image.png" ;
+import searchIcon from "../../assets/search-sm.svg";
 import { SearchedFoods } from "./sections/SearchedFoods";
  
-import { meals } from "../../../data/meals";
+import { meals } from "../../data/meals";
 import { useState, useEffect } from "react";   
 
 export const HomePage = () => {

@@ -1,5 +1,5 @@
 
-import { popularCategories } from "../../../../data/popularCategories"
+import { popularCategories } from "../../../data/popularCategories"
 import { Link } from "react-router-dom"
 
 export const PopularCategories = () => {

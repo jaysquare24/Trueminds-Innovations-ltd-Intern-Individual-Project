@@ -1,4 +1,4 @@
-import { FoodGrid } from "../../../common/FoodGrid"
+import { FoodGrid } from "../../../components/common/FoodGrid"
 
 
 export const SearchedFoods = ({ searchedMeals }) => {

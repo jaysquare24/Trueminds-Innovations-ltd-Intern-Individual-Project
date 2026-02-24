@@ -1,7 +1,7 @@
 import { Cart } from "./sections/Cart"
 import { OrderSummary } from "./sections/OrderSummary"
 import { useContext } from "react";
-import { CartContext } from "../../../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 
 export const OrderPage = () => {

@@ -1,5 +1,5 @@
-import { FoodGrid } from "../../../common/FoodGrid"
-import { chefSpecials } from "../../../../data/chefSpecial"
+import { FoodGrid } from "../../../components/common/FoodGrid"
+import { chefSpecials } from "../../../data/chefSpecial"
 
 export const ChefSpecial = () => {
     return (

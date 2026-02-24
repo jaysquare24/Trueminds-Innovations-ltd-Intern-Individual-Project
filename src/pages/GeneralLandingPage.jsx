@@ -1,9 +1,9 @@
-import landingPageImage from "../../assets/gen-aside-image.png";
-import deliveryIcon from "../../assets/delivery-icon.svg";
-import utensilIcon from "../../assets/utensil-icon.svg";
+import landingPageImage from "../assets/gen-aside-image.png";
+import deliveryIcon from "../assets/delivery-icon.svg";
+import utensilIcon from "../assets/utensil-icon.svg";
 import { Link } from "react-router-dom";
-import logo from "../../assets/Chuks-Kitchen-header-logo.svg";
-import mobileLandingPageImage from "../../assets/mobile-gen-image.png"
+import logo from "../assets/Chuks-Kitchen-header-logo.svg";
+import mobileLandingPageImage from "../assets/mobile-gen-image.png"
 
 export const GeneralLandingPage = () => {
   const handleNonFunctionalLinkClick = (e) => {

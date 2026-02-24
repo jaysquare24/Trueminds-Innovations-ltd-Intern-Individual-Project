@@ -1,9 +1,9 @@
-import { Hero } from "../common/Hero"
-import { menuCategories } from "../../data/menuCategories";
-import { FoodGrid } from "../common/FoodGrid"
-import exploreHeroImage from "../../assets/explore-hero-img.png";
+import { Hero } from "../components/common/Hero"
+import { menuCategories } from "../data/menuCategories";
+import { FoodGrid } from "../components/common/FoodGrid"
+import exploreHeroImage from "../assets/explore-hero-img.png";
 import { NavLink, useParams } from "react-router-dom";
-import { meals } from "../../data/meals";
+import { meals } from "../data/meals";
   
 export const ExplorePage = () => {
 
