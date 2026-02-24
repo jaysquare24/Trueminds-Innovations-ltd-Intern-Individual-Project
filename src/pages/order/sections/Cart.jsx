@@ -1,7 +1,7 @@
 import { formatCurrency } from "../../../utilities";
 import { Link } from "react-router-dom";
 
-export const Cart = ({items, dispatch}) => {
+export const Cart = ({items, dispatch }) => {
   
   return (  
     <div className="cart-container">
@@ -41,7 +41,7 @@ export const Cart = ({items, dispatch}) => {
                          X
                         </button>
 
-                        <p className="cart-item food-price">₦{formatCurrency(item.price)}</p> 
+                        <p className="cart-item food-price">₦{formatCurrency(item.price*item.quantity)}</p> 
                     
                 </div>
             </div>

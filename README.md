@@ -65,7 +65,7 @@ This project was developed as part of a structured internship sprint to demonstr
 
 ---
 
-## Project Structure Rationale
+## Project Structure
 
 The project structure was intentionally organized to promote scalability, maintainability, and clear separation of concerns in line with modern React best practices.
 
@@ -132,6 +132,12 @@ src/
 
 ---
 
+##  Live Link
+
+https://chuksmeal.netlify.app/
+
+---
+
 ##  Installation & Setup
 
 ### 1️ Clone the repository
@@ -144,11 +150,13 @@ cd Trueminds-Innovations-ltd-Intern-Individual-Project
 ----
 
 ### 2 Install Dependencies
- - npm install
 
-### 3 Start Development Server
- - npm run dev
- - App will run on  http://localhost:5173
+- npm install
+
+### 3 Start Development 
+
+- npm run dev
+- App will run on  http://localhost:5173
 
 ---
 
@@ -263,6 +271,7 @@ Frontend Developer Intern
 
 - Trueminds Innovations Limited  
 - Icons8 website  
+- Tinypng website
 
 ---
 

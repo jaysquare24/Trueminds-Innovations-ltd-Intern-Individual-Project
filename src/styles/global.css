@@ -1020,7 +1020,7 @@ body.modal-open{
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #F3F4F6;
-  padding: 20px;
+  padding: 50px 20px;
   border-radius: 8px;
   width: 100%;
   z-index: 5;
@@ -1030,16 +1030,16 @@ body.modal-open{
 
 .close-modal{
     display: flex;
-    justify-self:end;
     justify-content: center;
+    border: none;
     text-align: center;
     background-color: #000000;
     color: #FFFFFF;
     width: 31.45px;
     margin-right: 15px;
     margin-bottom: 20px;
-    border: none;
-    padding: 2px;
+    margin-left: auto;
+    padding: 4px 2px;
     border-radius: 4px;
 }
 

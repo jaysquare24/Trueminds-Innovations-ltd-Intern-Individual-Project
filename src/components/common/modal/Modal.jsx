@@ -13,7 +13,7 @@ export const Modal = ({children, onClose, open}) =>{
   return (
   <>
     <div className="modal">
-      <button className="close-modal" type="button" onClick={onClose}>x</button>
+      <button className="close-modal" type="button" onClick={onClose}>X</button>
       { children}
     </div>
   </>
