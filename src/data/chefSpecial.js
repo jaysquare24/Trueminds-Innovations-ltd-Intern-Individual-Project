@@ -3,7 +3,7 @@ export const chefSpecials = [
     id: 1,
     name: "Spicy Tilapia Pepper Soup",
     description:"A comforting and spicy soup with tender tilapia fish, a true Nigerian delicacy.",
-    imgUrl:"/resources/tilapia-pepper-soup.svg",
+    imgUrl:"/resources/tilapia-pepper-soup.png",
     price: 3500,
     
   },
@@ -11,14 +11,14 @@ export const chefSpecials = [
     id: 2,
     name: "Jollof Rice & Fried Chicken",
     description:"Our signature Jollof rice, cooked to perfection, served with succulent fried chicken.",
-    imgUrl:"/resources/jollof-rice.svg",
+    imgUrl:"/resources/jollof-rice.png",
     price: 3200,
   },
   {
     id: 3,
     name: "Stick Grill Meat",
      description:"Our signature Stick meat, cooked to perfection, served fresh vegetables.",
-    imgUrl:"/resources/grills-bbq.svg",
+    imgUrl:"/resources/grills-bbq.png",
     price: 3500,
   },
   {
@@ -39,7 +39,7 @@ export const chefSpecials = [
     id: 6,
     name: "Egusi Soup & Pounded Yam",
     description:"Rich and savory Egusi soup with assorted meats, paired with freshly pounded yam.",
-    imgUrl:"/resources/egunsi-pounded-yam.svg",
+    imgUrl:"/resources/egunsi-pounded-yam.png",
     price: 3500,
   }
 ];

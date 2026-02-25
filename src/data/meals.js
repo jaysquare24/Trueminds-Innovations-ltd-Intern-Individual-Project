@@ -7,7 +7,7 @@ export const meals = [
     price: 3200,
     isChefSpecial: true,
     isPopular: true,
-    imgUrl:"/resources/jollof-rice.svg",
+    imgUrl:"/resources/jollof-rice.png",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const meals = [
     price: 3500,
     isChefSpecial: false,
     isPopular:true,
-    imgUrl: "/resources/eba-egunsi.svg"
+    imgUrl: "/resources/eba-egunsi.png"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const meals = [
     price: 3800,
     isChefSpecial: false,
     isPopular: true,
-    imgUrl: "/resources/pounded-yam-edikaikong.svg"
+    imgUrl: "/resources/pounded-yam-edikaikong.png"
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ export const meals = [
     price: 3500,
     isChefSpecial: true,
     isPopular: true,
-    imgUrl:"/resources/tilapia-pepper-soup.svg",
+    imgUrl:"/resources/tilapia-pepper-soup.png",
   },
   {
     id: 6,
@@ -67,7 +67,7 @@ export const meals = [
     price: 3500,
     isChefSpecial: false,
     isPopular: true,
-    imgUrl: "/resources/smoke-fish-jollof.svg"
+    imgUrl: "/resources/smoke-fish-jollof.png"
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ export const meals = [
     price: 3500,
     isChefSpecial: false,
     isPopular: false,
-    imgUrl: "/resources/jollof-rice.svg"
+    imgUrl: "/resources/jollof-rice.png"
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ export const meals = [
     price: 3500,
     isChefSpecial: true,
     isPopular: false,
-    imgUrl: "/resources/jollof-img.svg"
+    imgUrl: "/resources/jollof-img.png"
   },
   {
     id: 10,
@@ -97,14 +97,14 @@ export const meals = [
     price: 3000,
     isChefSpecial: true,
     isPopular:false,
-    imgUrl: "/resources/fufu-okra.svg"
+    imgUrl: "/resources/fufu-okra.png"
   },
   {
     id: 11,
     name: "Stick Grill Meat",
     description:"Our signature Stick meat, cooked to perfection, served fresh vegetables.",
     category:"grills",
-    imgUrl:"/resources/grills-bbq.svg",
+    imgUrl:"/resources/grills-bbq.png",
     price: 3500,
     isChefSpecial: true,
     isPopular:false,
@@ -117,7 +117,7 @@ export const meals = [
     price:1500,
     isChefSpecial: false,
     isPopular:false,
-    imgUrl:"/resources/sweet-treats.svg"
+    imgUrl:"/resources/sweet-treats.png"
   },
   {
     id: 13,
@@ -138,7 +138,18 @@ export const meals = [
     isChefSpecial: false,
     isPopular:false,
     imgUrl:"/resources/beverages.jpg"
-  }
+  },
+
+  {
+    id: 15,
+    name: "Grilled Tilapia Fish",
+    description:"Whole grilled tilapia seasoned with our special spices.",
+    category:"grills",
+    price: 4500,
+    isChefSpecial: false,
+    isPopular: true,
+    imgUrl:"/resources/grilled-tilapia.png",
+  },
 
 
 ];

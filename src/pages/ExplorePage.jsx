@@ -36,7 +36,7 @@ export const ExplorePage = () => {
                imageSrc={exploreHeroImage} 
             />
             <section className="menu-categories-section section">
-                <h2 className="menu-categories-title">Menu Categoris</h2>
+                <h2 className="menu-categories-title">Menu Categories</h2>
                 <nav className="menu-categories-container">
                     { Object.entries(menuCategories).map(([key, value]) => ( 
                       <NavLink

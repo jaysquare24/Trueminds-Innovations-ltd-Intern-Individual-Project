@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import foodDetailasideimg from "../../../../assets/food-detail-image.svg"; 
+import foodDetailasideimg from "../../../../assets/food-detail-image.png"; 
 import navIcon from "../../../../assets/timer.svg"; 
 import { CartContext } from "../../../../context/CartContext";
 import { useContext, useState} from "react";

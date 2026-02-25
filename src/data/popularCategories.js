@@ -2,26 +2,26 @@ export const popularCategories = [
  {
     id: 1,
     name: "Jollof Delight",
-    imgUrl:"/resources/jollof-img.svg",
+    imgUrl:"/resources/jollof-img.png",
     category:"rice"
     
   },
   {
     id: 2,
     name: "Swallow & Soups",
-    imgUrl:"/resources/swallow-soup.svg",
+    imgUrl:"/resources/swallow-soup.png",
     category:"swallow"
   },
   {
     id: 3,
     name: "Grills & BBQ",
-    imgUrl:"/resources/grills-bbq.svg",
+    imgUrl:"/resources/grills-bbq.png",
     category:"grills"
   },
   {
     id: 4,
     name: "Sweet & Treats",
-    imgUrl:"/resources/sweet-treats.svg",
+    imgUrl:"/resources/sweet-treats.png",
     category:"treats"
   },
   {
