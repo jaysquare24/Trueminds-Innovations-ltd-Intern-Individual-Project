@@ -330,8 +330,8 @@ button{
 
 .agreement{
     display: inline-flex;
-    flex-wrap: wrap;
-    align-items: center;
+    
+    align-items: flex-start;
     gap: 10px;
     font-family: 'Inter',sans-serif;
     font-weight: 500;
@@ -341,7 +341,7 @@ button{
     color: #616161;
     margin-bottom: 10px;
     
-}
+} 
 
 input[type="checkbox"]{
    height: 17px;
@@ -352,6 +352,7 @@ input[type="checkbox"]{
 
 .agreement a{
     color: #1E88E5;
+    margin: 0 3px;
 }
 
 .continue-button{

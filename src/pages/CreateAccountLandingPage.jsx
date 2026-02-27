@@ -78,13 +78,15 @@ export const CreateAccountLandingPage = () => {
                     <label htmlFor="confirm-password">Confirm Password</label>
                     <input type={showConfirmPassword ? "text" : "password"} id="confirm-password" name="confirm-password" placeholder="Confirm your password" required />
                     
-                    <p className="agreement"> 
-                        <input type="checkbox" id="terms" name="terms" required /> 
-                        I agree to the  
-                        <a href="#" onClick={handleNonFunctionalLinkClick}>Terms & Conditions</a> 
-                        and 
-                        <a  href="#" onClick={handleNonFunctionalLinkClick}>Privacy Policy</a>
-                    </p>
+                    <div className="agreement"> 
+                        <input type="checkbox" id="terms" name="terms" required />
+                        <p> 
+                            I agree to the  
+                            <a href="#" onClick={handleNonFunctionalLinkClick}>Terms & Conditions</a> 
+                            and 
+                            <a  href="#" onClick={handleNonFunctionalLinkClick}>Privacy Policy</a>
+                        </p>
+                    </div>
                     <Link to="/home" className="continue-button">Continue</Link>
                 </form>
                 <p className="option-title">or continue with</p>
