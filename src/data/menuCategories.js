@@ -4,6 +4,7 @@ export const menuCategories = {
     rice:"Jollof Rice & Entrees",
     swallow:"Swallow & Soups",
     grills:"Grills & Sides",
-    beverages:"Beverages", 
+    beverages:"Beverages",
+    treats:"Sweet & Treats",
     desserts:"Desserts"
 } 
