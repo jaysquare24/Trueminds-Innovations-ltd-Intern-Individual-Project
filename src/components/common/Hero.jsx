@@ -1,6 +1,11 @@
 import { motion } from "framer-motion"
 
 export const Hero = ({ title, description, imageSrc, buttonText }) => {
+
+     const handleNonFunctionalLinkClick = (e) => {
+        e.preventDefault();
+        alert("This button is not functional in the current version.");
+    };
     return (
         <section className="hero">      
             <div className="hero-content">
@@ -19,11 +24,12 @@ export const Hero = ({ title, description, imageSrc, buttonText }) => {
                 </motion.p> 
                 {buttonText && (
                   
-                    <motion.a href="/home" 
+                    <motion.a 
                     className="hero-button order-now" 
                     initial={{ opacity: 0, y: 20 }} 
                     whileInView={{ opacity: 1, y: 0 }} 
-                    transition={{ duration: 1, delay: 0.6 }}>
+                    transition={{ duration: 1, delay: 0.6 }}
+                    onClick={handleNonFunctionalLinkClick}>
                         {buttonText}
                     </motion.a>
                    
