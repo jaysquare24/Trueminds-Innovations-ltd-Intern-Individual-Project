@@ -329,8 +329,7 @@ button{
 }
 
 .agreement{
-    display: inline-flex;
-    
+    display: flex;
     align-items: flex-start;
     gap: 10px;
     font-family: 'Inter',sans-serif;
@@ -800,11 +799,7 @@ nav .log-in{
     line-height: 34px;
     letter-spacing: 0%;
     margin: 18px 0;
-    padding-left: 24px;
-
-    
-    
-    
+    padding-left: 24px;   
 }
 
 .menu-category-nav{
@@ -944,7 +939,7 @@ nav .log-in{
 .input-container{
     display: flex;
     border: 1px solid #BDBDBD;
-  padding: 8px 11px;
+    padding: 8px 11px;
     height: 49.36px;
     align-items: center;
     border-radius: 8px;
@@ -1787,7 +1782,6 @@ footer .nav-links a{
 @media screen and (max-width:600px){
   
     .mobile.aside-landing-page-image-container{
-   
         height: 159px;
     }
 
@@ -1798,6 +1792,9 @@ footer .nav-links a{
         width: 90%;
     }
 
+    .agreement input, .agreement p{
+        margin: 0;
+    }
     .popular-categories .food-item{
         height: 272px;
     }
