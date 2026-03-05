@@ -263,7 +263,7 @@ Frontend Developer Intern
 
 - GitHub: https://github.com/jaysquare24  
 - LinkedIn: https://www.linkedin.com/in/jamiu-olajide-795444185
-- Portfolio: https://jamiuolajide.netlify.app/ 
+- Portfolio: https://olajidejamiu.netlify.app/ 
 
 ---
 
