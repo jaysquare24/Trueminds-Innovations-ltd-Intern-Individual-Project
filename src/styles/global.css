@@ -354,6 +354,10 @@ input[type="checkbox"]{
     margin: 0 3px;
 }
 
+.agreement p{
+    text-align: left;
+}
+
 .continue-button{
     font-size: 16px;
     font-weight: 600;
@@ -496,7 +500,6 @@ nav .log-in{
 }
 
 .order-count{
-
     font-size: 10px;
     color: #FFFFFF;
     background-color: #FF7A18;
@@ -743,9 +746,6 @@ nav .log-in{
 
 
 /*EXPLORE PAGE*/
-
-
-
 .explore-page .hero{
     position: relative;
     width: 100%;
@@ -2069,7 +2069,7 @@ footer .nav-links a{
     }
 
     .phone.input-icon{
-        top:30%; 
+        top:30.5%; 
     }
 
     .lock.input-icon,.password-toggle {
@@ -2078,12 +2078,12 @@ footer .nav-links a{
 
     .create-account-form .lock.input-icon,
     .create-account-form .password-toggle{
-        top: 49%;
+        top: 50%;
     }
 
     .confirm-password-toggle,
     .confirm-password-lock{
-        top:68%;
+        top:69%;
     }  
 
     .search-bar{
